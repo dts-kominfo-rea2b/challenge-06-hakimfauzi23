@@ -55,7 +55,7 @@ async function bacaData(fnCallback) {
       data.push(dataGenerator(JSON.parse(readedData)));
     }
     fnCallback(null, data);
-  } catch (error) {
+  } catch (err) {
     fnCallback(err, null);
   }
 }
